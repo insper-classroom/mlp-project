@@ -1,55 +1,75 @@
-Dataset Explanation
-This dataset is a synthetic version inspired by the original Credit Risk dataset, enriched with additional variables based on Financial Risk data for Loan Approval. It contains 45,000 records and is designed for classification tasks, specifically to predict the approval or rejection of a loan.
+# Loan Approval Prediction using a Multi-Layer Perceptron (MLP)
 
-Detailed Dataset Description
-What does it represent?
-The dataset represents a collection of information about loan applicants, which can be used to train a machine learning model to predict whether a loan should be approved or not.
+## 1. Project Overview
 
-What are the features (inputs) and their types?
-The features of the dataset are:
+This project aims to build and evaluate a machine learning model to predict the approval or rejection of loan applications. The core of the project is the application of a Multi-Layer Perceptron (MLP), a type of neural network, for this binary classification task.
 
-Numerical:
+The project utilizes a synthetic dataset inspired by real-world credit risk scenarios. It simulates one of the most classic and high-impact challenges in the financial sector: credit risk assessment. The relevance of solving this problem efficiently and fairly is immense, both for financial institutions and for society.
 
-Age: The applicant's age.
+## 2. The Business Challenge
 
-Annual Income: The applicant's annual income.
+The central challenge is to build a model that accurately balances two competing objectives:
 
-Employment Experience: The applicant's work experience.
+1.  **Minimizing the Risk of Default (False Positives):** Approving a loan for someone who will not pay it back results in a direct financial loss.
+2.  **Maximizing Business Opportunity (False Negatives):** Rejecting a loan for someone who would have paid it back correctly means lost revenue and the potential loss of a customer.
 
-Loan Amount: The amount of the loan requested.
+Furthermore, the model must be fair and interpretable, as institutions are often required to explain why a loan was denied. This project serves as a practical exercise in building effective and responsible AI systems.
 
-Loan Interest Rate: The interest rate of the loan.
+## 3. The Dataset
 
-Loan Amount as a percentage of annual income: The loan amount as a percentage of the annual income.
+The dataset represents a collection of 45,000 records of loan applicants.
 
-Length of credit history: The length of the applicant's credit history.
+### 3.1. Features
 
-Credit score: The applicant's credit score.
+#### Numerical Features
 
-Previous loan defaults on file: Records of previous loan defaults.
+- **Age:** The applicant's age.
+- **Annual Income:** The applicant's annual income.
+- **Employment Experience:** The applicant's work experience.
+- **Loan Amount:** The amount of the loan requested.
+- **Loan Interest Rate:** The interest rate of the loan.
+- **Loan Amount as a percentage of annual income:** The loan amount as a percentage of the annual income.
+- **Length of credit history:** The length of the applicant's credit history.
+- **Credit score:** The applicant's credit score.
+- **Previous loan defaults on file:** Records of previous loan defaults.
 
-Categorical:
+#### Categorical Features
 
-Gender: The applicant's gender.
+- **Gender:** The applicant's gender.
+- **Education:** The applicant's education level.
+- **Home Ownership:** Whether the applicant owns a home.
+- **Loan Intent:** The purpose of the loan.
 
-Education: The applicant's education level.
+### 3.2. Target Variable
 
-Home Ownership: Whether the applicant owns a home.
+The target variable is `loan_status`, which is a binary variable:
+- **1:** Loan Approved
+- **0:** Loan Rejected
 
-Loan Intent: The purpose of the loan.
+## 4. Project Files and Structure
 
-What is the target variable (classes/labels)?
-The target variable is loan_status, which is a binary variable:
+- **`data_exploration_preprocess.ipynb`**: This is the main Jupyter Notebook for the project. It contains the complete workflow, including:
+    - Initial data loading and inspection.
+    - **Exploratory Data Analysis (EDA):** Visualizing distributions (histograms, box plots) to understand the data's characteristics.
+    - **Data Cleaning & Preprocessing:** Handling outliers, transforming skewed features (log transform), and preparing the data for modeling.
+- **`data/`**: A directory containing the raw and processed datasets.
+- **`README.md`**: This file, providing a detailed explanation of the project.
 
-1: Loan approved
+## 5. Methodology: Applying an MLP for Classification
 
-0: Loan rejected
+The primary goal of this project is to apply a **Multi-Layer Perceptron (MLP)**, a type of feedforward artificial neural network, to this classification problem.
 
-Domain Knowledge
-In this context of loan approval, some financial terms are important:
+MLPs are particularly well-suited for this task for several reasons:
+- **Learning Non-Linear Relationships:** Financial data is complex. The relationship between an applicant's features (like age, income, and credit score) and their creditworthiness is rarely linear. MLPs excel at learning these complex, non-linear patterns.
+- **Automatic Feature Interaction:** Neural networks can automatically learn the intricate interactions between different input features without requiring manual feature engineering.
+- **Scalability:** They can effectively handle a large number of features and data points, making them suitable for large-scale, real-world datasets.
 
-Credit Score: A numerical score that represents an individual's creditworthiness. A higher score generally indicates a lower risk of default.
+The objective is to train the MLP on the preprocessed applicant data to learn the underlying patterns that distinguish between a "good" and a "bad" loan applicant, thereby accurately classifying new loan applications.
 
-Loan Intent: The reason why the loan is being requested (e.g., for education, medical expenses, home improvements). The purpose can influence the risk assessment.
+## 6. Requirements
 
-Default: The failure to meet the obligation to repay a loan. Having a history of defaults significantly increases the risk for the lender.
+To run the analysis and modeling code in `data_exploration_preprocess.ipynb`, you need to have Python installed along with the following libraries. You can install them using pip:
+
+```bash
+pip install -r requirements.txt
+```
