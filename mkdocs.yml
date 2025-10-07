@@ -130,5 +130,6 @@ nav:
           - Download de Dados: data_analysis.ipynb      # ← exists
           - Pré-processamento de Dados: data_exploration.ipynb
           - Treinamento do Modelo - MLP em Numpy: model_training.ipynb
+          - Avaliação do Modelo: model_evaluation.ipynb
   # Remove this until the folder exists:
   # - This documentation: thisdocumentation/main.md
