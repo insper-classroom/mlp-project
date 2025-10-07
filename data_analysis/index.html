@@ -10,7 +10,7 @@
         <meta name="author" content="Sandmann, H.">
       
       
-        <link rel="canonical" href="https://alfredjynx.github.io/Classification/data_analysis/">
+        <link rel="canonical" href="https://insper-classroom.github.io/Classification/data_analysis/">
       
       
         <link rel="prev" href="..">
@@ -507,6 +507,29 @@
   
   <span class="md-ellipsis">
     Multi Layer Perceptron
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model_evaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Avaliação do Modelo
     
   </span>
   
@@ -1144,30 +1167,57 @@ Dataset downloaded successfully to ./data/loan_approval
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
-<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=126c07af">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3662515d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div><div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="CodeMirror cm-s-jupyter">
-<div class="zeroclipboard-container">
-<clipboard-copy ,="" aria-label="Copy to Clipboard" for="cell-2">
-<div>
-<span class="notice" hidden="">Copied!</span>
-<svg aria-hidden="true" class="clipboard-copy-icon" data-view-component="true" height="20" version="1.1" viewbox="0 0 16 16" width="20">
-<path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-<path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-</clipboard-copy>
-</div>
-<div class="highlight-ipynb hl-python"><pre><span></span>
-</pre></div>
-<div class="clipboard-copy-txt" id="cell-2"></div>
-</div>
-</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="loan-approval-classification-dataset">Loan Approval Classification Dataset<a class="anchor-link" href="#loan-approval-classification-dataset">¶</a></h1><h2 id="dataset-overview">Dataset Overview<a class="anchor-link" href="#dataset-overview">¶</a></h2><p>This dataset is a synthetic version inspired by the original Credit Risk dataset, enriched with additional variables based on Financial Risk data for Loan Approval. It contains 45,000 records and is designed for classification tasks, specifically to predict the approval or rejection of a loan.</p>
+<p>The dataset represents a collection of information about loan applicants, which can be used to train a machine learning model to predict whether a loan should be approved or not.</p>
+<h2 id="features">Features<a class="anchor-link" href="#features">¶</a></h2><h3 id="numerical-features">Numerical Features<a class="anchor-link" href="#numerical-features">¶</a></h3><ul>
+<li><strong>Age:</strong> The applicant's age.</li>
+<li><strong>Annual Income:</strong> The applicant's annual income.</li>
+<li><strong>Employment Experience:</strong> The applicant's work experience.</li>
+<li><strong>Loan Amount:</strong> The amount of the loan requested.</li>
+<li><strong>Loan Interest Rate:</strong> The interest rate of the loan.</li>
+<li><strong>Loan Amount as a percentage of annual income:</strong> The loan amount as a percentage of the annual income.</li>
+<li><strong>Length of credit history:</strong> The length of the applicant's credit history.</li>
+<li><strong>Credit score:</strong> The applicant's credit score.</li>
+<li><strong>Previous loan defaults on file:</strong> Records of previous loan defaults.</li>
+</ul>
+<h3 id="categorical-features">Categorical Features<a class="anchor-link" href="#categorical-features">¶</a></h3><ul>
+<li><strong>Gender:</strong> The applicant's gender.</li>
+<li><strong>Education:</strong> The applicant's education level.</li>
+<li><strong>Home Ownership:</strong> Whether the applicant owns a home.</li>
+<li><strong>Loan Intent:</strong> The purpose of the loan.</li>
+</ul>
+<h3 id="target-variable">Target Variable<a class="anchor-link" href="#target-variable">¶</a></h3><p>The target variable is <code>loan_status</code>, which is a binary variable:</p>
+<ul>
+<li><strong>1:</strong> Loan Approved</li>
+<li><strong>0:</strong> Loan Rejected</li>
+</ul>
+<h2 id="domain-knowledge">Domain Knowledge<a class="anchor-link" href="#domain-knowledge">¶</a></h2><p>In the context of loan approval, some financial terms are important:</p>
+<ul>
+<li><strong>Credit Score:</strong> A numerical score that represents an individual's creditworthiness. A higher score generally indicates a lower risk of default.</li>
+<li><strong>Loan Intent:</strong> The reason why the loan is being requested (e.g., for education, medical expenses, home improvements). The purpose can influence the risk assessment.</li>
+<li><strong>Default (Inadimplência):</strong> The failure to meet the obligation to repay a loan. Having a history of defaults significantly increases the risk for the lender.</li>
+</ul>
+<h2 id="the-challenge-and-real-world-relevance">The Challenge and Real-World Relevance<a class="anchor-link" href="#the-challenge-and-real-world-relevance">¶</a></h2><p>Even though this is a synthetic dataset, this project simulates one of the most classic and high-impact challenges in the financial and technology sectors: credit risk assessment. The relevance of solving this problem efficiently and fairly is immense, both for financial institutions and for society.</p>
+<h3 id="the-core-challenge">The Core Challenge<a class="anchor-link" href="#the-core-challenge">¶</a></h3><p>The central challenge is to build a model that accurately balances two competing objectives:</p>
+<ol>
+<li><strong>Minimizing the Risk of Default (False Positives):</strong> Approving a loan for someone who will not pay it back results in a direct financial loss for the institution. The model must be rigorous in identifying bad payers.</li>
+<li><strong>Maximizing Business Opportunity (False Negatives):</strong> Rejecting a loan for someone who would have paid it back correctly means lost revenue (unearned interest) and the potential loss of a customer to a competitor. The model cannot be overly conservative.</li>
+</ol>
+<p>Furthermore, the challenge deepens when considering fairness and interpretability. A model must not discriminate based on sensitive data, and in many countries, institutions are legally required to explain why a loan was denied. Therefore, the model needs to be not only accurate but also transparent and fair.</p>
+<h3 id="real-world-relevance">Real-World Relevance<a class="anchor-link" href="#real-world-relevance">¶</a></h3><p>Working with this dataset, even though it is artificial, offers practical training for real problems faced daily by banks, fintechs, and credit unions.</p>
+<ul>
+<li><strong>Foundation for Credit Scoring Systems:</strong> The models created here are the basis of credit scoring systems that determine the financial health of millions of people and companies.</li>
+<li><strong>Automation and Scalability:</strong> In a digital world, manually analyzing every loan application is unfeasible. Machine Learning models allow companies to make fast, consistent, and large-scale decisions, enabling everything from the approval of an online credit card in minutes to car financing.</li>
+<li><strong>Financial Inclusion:</strong> Well-built models can identify good payers who might be overlooked by traditional analyses, allowing more people to access credit fairly.</li>
+</ul>
+<p>Therefore, solving this challenge is not just a technical exercise, but a direct simulation of how data science is applied to make critical financial decisions that affect people's lives and the economic health of businesses.</p>
 </div>
 </div>
 </div>
@@ -1201,7 +1251,7 @@ Dataset downloaded successfully to ./data/loan_approval
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 6, 2025 00:15:12 UTC">October 6, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 6, 2025 01:03:14 UTC">October 6, 2025</span>
   </span>
 
     
@@ -1211,7 +1261,7 @@ Dataset downloaded successfully to ./data/loan_approval
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 6, 2025 00:15:12 UTC">October 6, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 5, 2025 20:09:38 UTC">October 5, 2025</span>
   </span>
 
     

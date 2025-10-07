@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://alfredjynx.github.io/Classification/</loc>
-         <lastmod>2025-10-06</lastmod>
+         <loc>https://insper-classroom.github.io/Classification/</loc>
+         <lastmod>2025-10-07</lastmod>
     </url>
     <url>
-         <loc>https://alfredjynx.github.io/Classification/data_analysis/</loc>
-         <lastmod>2025-10-06</lastmod>
+         <loc>https://insper-classroom.github.io/Classification/data_analysis/</loc>
+         <lastmod>2025-10-07</lastmod>
     </url>
     <url>
-         <loc>https://alfredjynx.github.io/Classification/data_exploration/</loc>
-         <lastmod>2025-10-06</lastmod>
+         <loc>https://insper-classroom.github.io/Classification/data_exploration/</loc>
+         <lastmod>2025-10-07</lastmod>
     </url>
     <url>
-         <loc>https://alfredjynx.github.io/Classification/data_preparation/</loc>
-         <lastmod>2025-10-06</lastmod>
+         <loc>https://insper-classroom.github.io/Classification/data_preparation/</loc>
+         <lastmod>2025-10-07</lastmod>
     </url>
     <url>
-         <loc>https://alfredjynx.github.io/Classification/model_training/</loc>
-         <lastmod>2025-10-06</lastmod>
+         <loc>https://insper-classroom.github.io/Classification/model_evaluation/</loc>
+         <lastmod>2025-10-07</lastmod>
+    </url>
+    <url>
+         <loc>https://insper-classroom.github.io/Classification/model_training/</loc>
+         <lastmod>2025-10-07</lastmod>
     </url>
 </urlset>
