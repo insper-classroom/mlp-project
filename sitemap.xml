@@ -2,26 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://insper-classroom.github.io/Classification/</loc>
-         <lastmod>2025-10-07</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://insper-classroom.github.io/Classification/data_analysis/</loc>
-         <lastmod>2025-10-07</lastmod>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://insper-classroom.github.io/Classification/data_analysis_regression/</loc>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://insper-classroom.github.io/Classification/data_exploration/</loc>
-         <lastmod>2025-10-07</lastmod>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://insper-classroom.github.io/Classification/data_exploration_regression/</loc>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://insper-classroom.github.io/Classification/data_preparation/</loc>
-         <lastmod>2025-10-07</lastmod>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://insper-classroom.github.io/Classification/model_evaluation/</loc>
-         <lastmod>2025-10-07</lastmod>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://insper-classroom.github.io/Classification/model_evaluation_regression/</loc>
+         <lastmod>2025-11-11</lastmod>
     </url>
     <url>
          <loc>https://insper-classroom.github.io/Classification/model_training/</loc>
-         <lastmod>2025-10-07</lastmod>
+         <lastmod>2025-11-11</lastmod>
+    </url>
+    <url>
+         <loc>https://insper-classroom.github.io/Classification/model_training_regression/</loc>
+         <lastmod>2025-11-11</lastmod>
     </url>
 </urlset>
