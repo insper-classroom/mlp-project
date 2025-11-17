@@ -136,5 +136,7 @@ nav:
           - Pré-processamento de Dados: data_exploration_regression.ipynb
           - Treinamento do Modelo - MLP em Numpy: model_training_regression.ipynb
           - Avaliação do Modelo: model_evaluation_regression.ipynb
+      - Modelos de Difusão:
+        - ComfyUI: ComfyUI.md
   # Remove this until the folder exists:
   # - This documentation: thisdocumentation/main.md
